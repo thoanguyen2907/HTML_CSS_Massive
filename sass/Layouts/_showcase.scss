@@ -1,0 +1,97 @@
+.showcase{
+    padding: $pd-7 0;
+
+    .showcase__intro{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #work-a{
+        padding: $pd-7 0;
+        .porfolio-menu {
+            width: 40%;
+            margin: $mg-5 auto;
+            text-align: center;
+            
+            ul {
+                display: flex;
+                li {
+                   margin-right: $mg-7;
+                    padding: $pd-0 $pd-1;
+                    cursor: pointer;
+                    list-style: none;
+                    text-transform: uppercase;
+                    color: $color-gray-7;
+                    transition: all 0.3s ease;
+                    &.active{
+                        color:  $color-black-0; 
+                     
+                    }
+                }
+            }
+        }
+        .items {
+            .col-3 {
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                .item{
+                    position: relative;
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    .overlay{
+                        position: absolute;
+                        top: 0; 
+                        left: 0; 
+                        width: 100%;
+                        height: 100%;
+                        background-color: $color-white-cream;
+                        border: 20px solid rgba(0,0,0,0.1); 
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                        i{
+                            color: $color-gray-3; 
+                            font-size: $fs-5; 
+                            margin-bottom: $mg-3; 
+                            transform: translateY(-30px);
+                            transition: all 0.3s ease;
+                        }
+                        p{
+                            text-transform: uppercase;
+                            letter-spacing: $letter-spacing-0;
+                            transition: all 0.3s ease;
+                            transform: translateY(15px);
+                        }
+                        p{
+                            font-size: $fs-1; 
+                        }           
+                        p.category{
+                            font-size: $fs-0; 
+                            color: $color-gray-8; 
+                   
+                        }
+                    }
+                    &:hover{
+                        .overlay{
+                            opacity: 1;
+                            i {
+                                transform: translateY(0px);
+                            }
+                            p{                            
+                                transform: translateY(0px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+  
+}

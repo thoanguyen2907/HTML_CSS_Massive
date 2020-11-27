@@ -1,0 +1,40 @@
+
+.slick-prev.slick-arrow,.slick-next.slick-arrow {
+display: none !important;
+}
+.slick-slider.slick-dotted {
+        margin-bottom: 0px;
+        ul.slick-dots {
+            bottom: 10px;
+            left: 150px;
+            li {
+                button{
+                    &:before{
+                        font-size: 8px;
+                        color: transparent; 
+                        border: 2px solid white;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        width: 15px;
+                        height: 15px;
+                    }                  
+                }
+                &.slick-active{
+                    button{
+                        &:before{                    
+                            border: 2px solid transparent;
+                            background-color: white;
+                            
+                        }
+                        
+                    }
+                }
+
+            }
+            }
+                
+        }
+    
+.slick-vertical .slick-slide{
+    border: none;
+}

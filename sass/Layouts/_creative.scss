@@ -1,0 +1,46 @@
+.creative{
+    width: 80%; 
+    margin: 0 auto;
+    padding: $pd-7 0;
+    .card{
+    padding: $pd-4;
+    position: relative;
+    
+    .card-title{
+        text-transform: uppercase;
+        font-size: $fs-2;
+        color: $color-black-1;
+        margin-bottom: $mg-3;
+        margin-top: $mg-2;
+    }
+    .card-text{
+
+        color: $color-black-2;
+        font-size: $fs-1;
+    }
+    .icon{
+        position: absolute;
+        top: -30px;
+        width: 60px;
+        height: 60px;
+        box-shadow: 0 0 0 10px #fff; 
+        background-color: $color-black-3;
+        margin-bottom: $mg-2;
+        transition: all 0.3s ease;
+      
+        i {
+            font-size: 30px;
+            color: white;
+            padding: $pd-2; 
+        }
+    }
+    &:hover{
+        cursor: pointer;
+        .icon{     
+            background-color: $color-yellow-1;
+            
+        }
+    }
+    }
+   
+}

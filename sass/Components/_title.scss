@@ -1,0 +1,29 @@
+.title{
+    text-align: center;
+    h4 {
+        text-transform: uppercase;
+        color: $color-black-1; 
+        position: relative;
+        margin-bottom: $mg-1;
+        padding-bottom: $pd-1;;
+        &:after{
+            content: "";
+            display: block; 
+            height: 2px; 
+            background-color: $color-gray-4;  
+            width: 60px;
+            position: absolute;
+            bottom: -5px; 
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .description{
+        color: $color-black-1; 
+        width: 60%;
+        margin: $mg-2 auto; 
+        line-height: $line-height-2;
+        
+    }
+
+}

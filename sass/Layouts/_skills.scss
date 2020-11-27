@@ -1,0 +1,92 @@
+.skills{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../img/skills.jpg");
+    width: 100%;
+    height: 600px;
+    color: white; 
+
+    .skills__left{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        h4{
+            font-size:  $fs-4;
+            font-weight: $fw-1;
+            letter-spacing: $letter-spacing-2;
+            text-transform: uppercase;
+        }
+    }
+    .skills__right{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+       width: 60%;
+        .overlay{
+            background: $color-black-light;
+            top: 0; 
+            left:0; 
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .skills__right__details{           
+            z-index: 2;
+            h4, .description{       
+            color: white !important; 
+            text-align: justify;  
+            &:after{
+                display: none;
+            }         
+          }  
+          .description{
+            line-height: $line-height-3;
+            margin: 0;
+            width: 100%;
+          }
+
+        }
+        .skills__right__percentage{
+            .massive-progress.progress{
+                margin: $mg-8  0;
+                height: $fs-3;
+                background-color: #606060;
+                border-radius: none;
+                overflow: visible;
+                .progress-bar{
+                    background-color: white;
+                    color: $color-black-3;
+                    text-align: start;
+                    padding: $pd-1;
+                    position: relative;
+                    height: $fs-3;
+                    overflow: visible;
+                    span{
+                        color: black; 
+                        background-color: #a4a4a4 ; 
+                        position: absolute;
+                        top: -32px;
+                        right: -5px;                   
+                        height: 20px;         
+                        text-align: center;
+                        letter-spacing: 0;              
+                         border-radius: 30px;
+                        font-size: $fs-2;
+                        padding: $pd-1;
+                        &:before{
+                            @include arrow(-5px, 15px,10px, 10px, #a4a4a4);
+                            border-right: 1px solid #a4a4a4;
+                        }
+                     }
+                    
+                }
+               
+            }
+        }
+    }
+}

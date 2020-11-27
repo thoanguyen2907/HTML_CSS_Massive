@@ -1,0 +1,12 @@
+@mixin arrow($bottom, $left, $width, $height, $bgColor){
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    display: block;
+    width:  $width;
+    height: $height;
+    content: "";
+    background-color: $bgColor;
+    transform: rotate(45deg);
+    border-style: none;
+}

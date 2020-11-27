@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  line-height: normal; }
+
+.slick-prev.slick-arrow, .slick-next.slick-arrow {
+  display: none !important; }
+
+.slick-slider.slick-dotted {
+  margin-bottom: 0px; }
+  .slick-slider.slick-dotted ul.slick-dots {
+    bottom: 10px;
+    left: 150px; }
+    .slick-slider.slick-dotted ul.slick-dots li button:before {
+      font-size: 8px;
+      color: transparent;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: transparent;
+      width: 15px;
+      height: 15px; }
+    .slick-slider.slick-dotted ul.slick-dots li.slick-active button:before {
+      border: 2px solid transparent;
+      background-color: white; }
+
+.slick-vertical .slick-slide {
+  border: none; }
+
+.header__wrapper {
+  background-image: url("./../../img/headerBanner.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  padding: 10px 15px;
+  position: relative; }
+  .header__wrapper header .navbar img {
+    height: 96px;
+    width: auto; }
+  .header__wrapper .navbar__left ul .nav-item {
+    margin-right: 10px; }
+    .header__wrapper .navbar__left ul .nav-item .nav-link {
+      color: white;
+      text-transform: uppercase;
+      font-weight: lighter;
+      padding: 15px;
+      transition: all .3s ease;
+      cursor: pointer; }
+      .header__wrapper .navbar__left ul .nav-item .nav-link:hover {
+        color: #d6b161; }
+  .header__wrapper .header__wrapper__intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center; }
+    .header__wrapper .header__wrapper__intro h1 {
+      letter-spacing: 10px;
+      font-size: 55px;
+      font-weight: lighter; }
+    .header__wrapper .header__wrapper__intro h4 {
+      letter-spacing: 7px;
+      font-size: 20px;
+      font-weight: normal; }
+
+.creative {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0; }
+  .creative .card {
+    padding: 25px;
+    position: relative; }
+    .creative .card .card-title {
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+      margin-top: 15px; }
+    .creative .card .card-text {
+      color: #7e7e7e;
+      font-size: 15px; }
+    .creative .card .icon {
+      position: absolute;
+      top: -30px;
+      width: 60px;
+      height: 60px;
+      box-shadow: 0 0 0 10px #fff;
+      background-color: #222;
+      margin-bottom: 15px;
+      transition: all 0.3s ease; }
+      .creative .card .icon i {
+        font-size: 30px;
+        color: white;
+        padding: 15px; }
+    .creative .card:hover {
+      cursor: pointer; }
+      .creative .card:hover .icon {
+        background-color: #d6b161; }
+
+.skills {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./../../img/skills.jpg");
+  width: 100%;
+  height: 600px;
+  color: white; }
+  .skills .skills__left {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .skills .skills__left h4 {
+      font-size: 25px;
+      font-weight: normal;
+      letter-spacing: 10px;
+      text-transform: uppercase; }
+  .skills .skills__right {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60%; }
+    .skills .skills__right .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1; }
+    .skills .skills__right .skills__right__details {
+      z-index: 2; }
+      .skills .skills__right .skills__right__details h4, .skills .skills__right .skills__right__details .description {
+        color: white !important;
+        text-align: justify; }
+        .skills .skills__right .skills__right__details h4:after, .skills .skills__right .skills__right__details .description:after {
+          display: none; }
+      .skills .skills__right .skills__right__details .description {
+        line-height: 2.2;
+        margin: 0;
+        width: 100%; }
+    .skills .skills__right .skills__right__percentage .massive-progress.progress {
+      margin: 50px 0;
+      height: 20px;
+      background-color: #606060;
+      border-radius: none;
+      overflow: visible; }
+      .skills .skills__right .skills__right__percentage .massive-progress.progress .progress-bar {
+        background-color: white;
+        color: #222;
+        text-align: start;
+        padding: 10px;
+        position: relative;
+        height: 20px;
+        overflow: visible; }
+        .skills .skills__right .skills__right__percentage .massive-progress.progress .progress-bar span {
+          color: black;
+          background-color: #a4a4a4;
+          position: absolute;
+          top: -32px;
+          right: -5px;
+          height: 20px;
+          text-align: center;
+          letter-spacing: 0;
+          border-radius: 30px;
+          font-size: 18px;
+          padding: 10px; }
+          .skills .skills__right .skills__right__percentage .massive-progress.progress .progress-bar span:before {
+            position: absolute;
+            bottom: -5px;
+            left: 15px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            content: "";
+            background-color: #a4a4a4;
+            transform: rotate(45deg);
+            border-style: none;
+            border-right: 1px solid #a4a4a4; }
+
+.showcase {
+  padding: 50px 0; }
+  .showcase .showcase__intro {
+    width: 80%;
+    margin: 0 auto; }
+  .showcase #work-a {
+    padding: 50px 0; }
+    .showcase #work-a .porfolio-menu {
+      width: 40%;
+      margin: 30px auto;
+      text-align: center; }
+      .showcase #work-a .porfolio-menu ul {
+        display: flex; }
+        .showcase #work-a .porfolio-menu ul li {
+          margin-right: 45px;
+          padding: 5px 10px;
+          cursor: pointer;
+          list-style: none;
+          text-transform: uppercase;
+          color: #a9a8a8;
+          transition: all 0.3s ease; }
+          .showcase #work-a .porfolio-menu ul li.active {
+            color: #323232; }
+    .showcase #work-a .items .col-3 {
+      padding: 0;
+      height: 100%;
+      width: 100%; }
+      .showcase #work-a .items .col-3 .item {
+        position: relative; }
+        .showcase #work-a .items .col-3 .item img {
+          display: block;
+          height: 100%;
+          width: 100%; }
+        .showcase #work-a .items .col-3 .item .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.9);
+          border: 20px solid rgba(0, 0, 0, 0.1);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: all 0.3s ease;
+          cursor: pointer; }
+          .showcase #work-a .items .col-3 .item .overlay i {
+            color: #a1a7b3;
+            font-size: 35px;
+            margin-bottom: 20px;
+            transform: translateY(-30px);
+            transition: all 0.3s ease; }
+          .showcase #work-a .items .col-3 .item .overlay p {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            transition: all 0.3s ease;
+            transform: translateY(15px); }
+          .showcase #work-a .items .col-3 .item .overlay p {
+            font-size: 15px; }
+          .showcase #work-a .items .col-3 .item .overlay p.category {
+            font-size: 13px;
+            color: #757575; }
+        .showcase #work-a .items .col-3 .item:hover .overlay {
+          opacity: 1; }
+          .showcase #work-a .items .col-3 .item:hover .overlay i {
+            transform: translateY(0px); }
+          .showcase #work-a .items .col-3 .item:hover .overlay p {
+            transform: translateY(0px); }
+
+.title {
+  text-align: center; }
+  .title h4 {
+    text-transform: uppercase;
+    color: #333;
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+    .title h4:after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: #595959;
+      width: 60px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%); }
+  .title .description {
+    color: #333;
+    width: 60%;
+    margin: 15px auto;
+    line-height: 2; }
+
+/*# sourceMappingURL=main.css.map */

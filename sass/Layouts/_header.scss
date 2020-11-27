@@ -1,0 +1,55 @@
+.header__wrapper {
+    background-image: url('./../../img/headerBanner.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: $pd-1 $pd-2; 
+    position: relative;
+    header{
+        .navbar {
+
+            img {
+                height: 96px; 
+                width: auto;
+            }
+        }
+    }
+    .navbar__left {
+        ul {
+            .nav-item {
+                .nav-link {
+                    color: white; 
+                    text-transform: uppercase;
+                    font-weight: $fw-0;
+                    padding:$pd-2;
+                    transition: all .3s ease;
+                    cursor: pointer;
+                    &:hover{
+                        color: $color-yellow-1;
+                    }
+                }
+                
+                margin-right: $mg-1; 
+            }
+        }
+    }
+    .header__wrapper__intro{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        color: $color-white-0;
+        text-align: center;       
+        h1{
+            letter-spacing: $letter-spacing-2;
+            font-size: $fs-8;
+            font-weight: $fw-0;
+        }
+        h4{
+            letter-spacing: $letter-spacing-1;
+            font-size: $fs-3;
+            font-weight: $fw-1;
+        }
+    }
+}
